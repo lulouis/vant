@@ -174,8 +174,9 @@ export default {
         this.direction === 'vertical' &&
         !(parseInt(status, 2) & parseInt(direction, 2))
       ) {
-        e.preventDefault();
-        e.stopPropagation();
+        /* 陆帅华测试，为弹层支持touch */
+        // e.preventDefault();
+        // e.stopPropagation();
       }
     },
 
